@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nodejs-16-minimal:latest
+FROM registry.access.redhat.com/rhel7:latest
 COPY configure-apic-v10.sh /
 USER root
 RUN curl -kLo /tmp/gzip-1.5-10.el7.x86_64.rpm http://mirror.centos.org/centos/7/os/x86_64/Packages/gzip-1.5-10.el7.x86_64.rpm
